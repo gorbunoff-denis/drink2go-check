@@ -1,1 +1,30 @@
 /* здесь подключите шрифты */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat"),
+    url("/source/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("/source/fonts/Montserrat-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"),
+    url("/fonts/oswald/oswaldregular.woff2") format("woff2"),
+    url("/fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Oswald"),
+    url("/fonts/oswald/oswaldmedium.woff2") format("woff2"),
+    url("/fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
