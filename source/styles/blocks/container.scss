@@ -5,24 +5,26 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 100%;
+  //outline: 1px solid red;
 }
 
 // Tablet Viewport
-@media (min-width: 768px) {
-  .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 30px;
-    max-width: 100%;
-  }
-}
+// @media (min-width: 768px) {
+//   .container {
+//     position: relative;
+//     margin: 0 auto;
+//     padding: 0 30px;
+//     max-width: 100%;
+//   }
+// }
 
-@media (min-width: 1440px) {
-  .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    max-width: 1220px;
-  }
-}
+// Desktop Viewport
+// @media (min-width: 1440px) {
+//   .container {
+//     position: relative;
+//     margin: 0 auto;
+//     padding: 0;
+//     width: 100%;
+//     max-width: 1220px;
+//   }
+// }

@@ -1,0 +1,79 @@
+.header-menu {
+  display: flex;
+}
+
+.header-menu__item {
+  //outline: 1px red solid;
+}
+
+.header-menu__burger {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-right: 2px;
+  //outline: red 1px solid;
+}
+
+.header-menu__burger::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 16px;
+  height: 1.5px;
+  background-color: $black;
+  box-shadow: 0 5px 0 0 $black, 0 10px 0 0 $black;
+}
+
+.header-menu__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  //outline: red 1px solid;
+}
+
+.header-menu__link--user {
+  position: relative;
+}
+
+.header-menu__link--user::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $black;
+  mask-image:  url(../../images/user.svg);
+  //outline: 1px red solid;
+}
+
+.header-menu__link--basket {
+  position: relative;
+}
+
+.header-menu__link--basket::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $black;
+  mask-image:  url(../../images/basket.svg);
+  //outline: 1px red solid;
+}
+
+
+.header-menu__description {
+  display: none;
+}

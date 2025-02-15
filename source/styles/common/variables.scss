@@ -1,12 +1,16 @@
 /* здесь используйте глобальные переменные */
 //colors
-$primary: #7859cf; //Primary
-$secondary: #f0ebff; //Secondary
-$grey: #bdbdbd; //Grey
-$white: #ffffff; //White
+$primary: #7859cf; //Base/Primary
+$secondary: #f0ebff; //Base/Secondary
+$grey: #bdbdbd; //Base/Grey
+$white: #ffffff; //Base/White
+$black: #333333; //Base/Black
 
 
 //viewports
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
+
+//fonts
+$base-font: "Montserrat", "Arial", sans-serif;
