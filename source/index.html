@@ -2,16 +2,51 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
+    <!-- <link rel="preload" href="#" type="font/woff2" as="font"> -->
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header" data-test="header">
+      <h1 class = "visually-hidden">Интернет-магазин кофейных напитков</h1>
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo-img" href="#"></a>
+          <span class="header__logo-title">Интернет-магазин<br>кофейных напитков</span>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link " href="#">Каталог</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Доставка</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active" href="#">О нас</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__menu header-menu">
+            <a class="header-menu__link header-menu__link--user" href="#">
+              <span class="header-menu__description">Войти</span>
+            </a>
+            <a class="header-menu__link header-menu__link--basket" href="#">
+              <span class="header-menu__description">Корзина</span>
+            </a>
+            <button class="header-menu__burger" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-      <h1>Страница для старта</h1>
+      <h1 class="visually-hidden">Страница для старта</h1>
     </main>
   </body>
 </html>

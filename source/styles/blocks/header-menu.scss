@@ -1,0 +1,114 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu__burger {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-right: 2px;
+}
+
+.header-menu__burger::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 16px;
+  height: 1.5px;
+  background-color: $base-black;
+  box-shadow: 0 5px 0 0 $base-black, 0 10px 0 0 $base-black;
+}
+
+.header-menu__link {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.header-menu__link--user {
+  position: relative;
+}
+
+.header-menu__link--user::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $base-black;
+  mask-image:  url(../../images/user.svg);
+}
+
+.header-menu__link--basket {
+  position: relative;
+}
+
+.header-menu__link--basket::before {
+  position: absolute;
+  content: "";
+  top: 22px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: $base-black;
+  mask-image:  url(../../images/basket.svg);
+}
+
+.header-menu__description {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header-menu__burger {
+    display: none;
+  }
+
+  .header-menu__link--user::before {
+    right: 22px;
+  }
+
+  .header-menu__link--basket::before {
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    gap: 72px;
+  }
+
+  .header-menu__description {
+    display: block;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    align-self: center;
+  }
+
+  .header-menu__link--user::before {
+    left: -25px;
+  }
+
+  .header-menu__link--basket::before {
+    left: -25px;
+  }
+}

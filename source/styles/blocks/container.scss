@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  max-width: $mobile-width;
+}
+
+//Tablet Viewport
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: $tablet-width;
+  }
+}
+
+//Desktop Viewport
+@media (min-width: 1440px) {
+  .container {
+    max-width: $desktop-width;
+    padding: 0 40px;
+  }
+}

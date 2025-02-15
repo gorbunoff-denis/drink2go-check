@@ -1,0 +1,12 @@
+.page__body {
+  position: relative;
+  font-family: $base-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-black;
+  background-color: $base-white;
+  min-height: 100vh;
+  min-width: $mobile-width;
+  margin: 0;
+}
