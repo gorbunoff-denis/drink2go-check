@@ -1,31 +1,27 @@
 .header__wrapper {
-  position: relative;
+  position:sticky;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
   align-items: center;
-  margin: 0;
-  height: 60px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .header__logo-img {
-  //outline: red 1px solid;
+  position: relative;
   display: block;
   width: 32px;
   height: 36px;
   background-repeat: no-repeat;
   background-image: url(../../images/logo-mobile.svg);
+  margin-right: 66px;
+  flex-shrink: 0;
 }
 
 .header__logo-title {
   display: none;
-}
-
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 // Tablet Viewport
@@ -33,6 +29,7 @@
   .header__logo-img {
     width: 82px;
     background-image: url(../../images/logo-tablet.svg);
+    margin-right: 68px;
   }
 }
 
@@ -40,5 +37,16 @@
   .header__logo-img {
     width: 170px;
     background-image: url(../../images/logo-desktop.svg);
+    margin-right: 20px;
+  }
+
+  .header__logo-title {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    color: $base-black;
+    overflow: hidden;
+    margin-right: 163px;
   }
 }

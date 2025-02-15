@@ -4,4 +4,72 @@
 
 .navigation__list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__link {
+  display: block;
+  text-decoration: none;
+  color: $base-black;
+}
+
+// Tablet Viewport
+@media (min-width: $tablet-width) {
+  .navigation {
+    position: relative;
+    display: block;
+    margin-right: 60px;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .navigation__item {
+    padding: 32px 20px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: $base-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;;
+    text-transform: uppercase;
+    background-color: $base-white;
+    overflow: hidden;
+    max-width: fit-content;
+
+  }
+
+  .navigation__link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: $base-black;
+  }
+
+    .navigation__link--active::after {
+    position: absolute;
+    content: "";
+    right: -20px;
+    left: -20px;
+    bottom: -32px;
+    height: 2px;
+    background-color: $base-primary;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    margin-right: 207px;
+  }
+
+  .navigation__list {
+    gap: 20px;
+  }
 }

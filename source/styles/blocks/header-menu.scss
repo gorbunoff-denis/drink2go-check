@@ -1,9 +1,7 @@
 .header-menu {
   display: flex;
-}
-
-.header-menu__item {
-  //outline: 1px red solid;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-menu__burger {
@@ -15,7 +13,6 @@
   border: 0;
   cursor: pointer;
   margin-right: 2px;
-  //outline: red 1px solid;
 }
 
 .header-menu__burger::before {
@@ -25,16 +22,15 @@
   right: 0;
   width: 16px;
   height: 1.5px;
-  background-color: $black;
-  box-shadow: 0 5px 0 0 $black, 0 10px 0 0 $black;
+  background-color: $base-black;
+  box-shadow: 0 5px 0 0 $base-black, 0 10px 0 0 $base-black;
 }
 
 .header-menu__link {
-  display: block;
+  display: flex;
   width: 60px;
   height: 60px;
   position: relative;
-  //outline: red 1px solid;
 }
 
 .header-menu__link--user {
@@ -50,9 +46,8 @@
   height: 16px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: $black;
+  background-color: $base-black;
   mask-image:  url(../../images/user.svg);
-  //outline: 1px red solid;
 }
 
 .header-menu__link--basket {
@@ -68,12 +63,52 @@
   height: 16px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: $black;
+  background-color: $base-black;
   mask-image:  url(../../images/basket.svg);
-  //outline: 1px red solid;
 }
-
 
 .header-menu__description {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header-menu__burger {
+    display: none;
+  }
+
+  .header-menu__link--user::before {
+    right: 22px;
+  }
+
+  .header-menu__link--basket::before {
+    right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+    gap: 72px;
+  }
+
+  .header-menu__description {
+    display: block;
+    font-family: $base-font;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    align-self: center;
+  }
+
+  .header-menu__link--user::before {
+    left: -25px;
+  }
+
+  .header-menu__link--basket::before {
+    left: -25px;
+  }
 }
