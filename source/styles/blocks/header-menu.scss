@@ -47,7 +47,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: $base-black;
-  mask-image:  url(../../images/user.svg);
+  mask-image: url("../../icons/user.svg");
 }
 
 .header-menu__link--basket {
@@ -64,7 +64,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: $base-black;
-  mask-image:  url(../../images/basket.svg);
+  mask-image: url("../../icons/basket.svg");
 }
 
 .header-menu__description {

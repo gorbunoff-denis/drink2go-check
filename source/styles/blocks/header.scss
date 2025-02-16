@@ -1,5 +1,5 @@
 .header__wrapper {
-  position:sticky;
+  position: sticky;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -13,7 +13,7 @@
   width: 32px;
   height: 36px;
   background-repeat: no-repeat;
-  background-image: url(../../images/logo-mobile.svg);
+  background-image: url("../../images/logo-mobile.svg");
   margin-right: 66px;
   flex-shrink: 0;
 }
@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .header__logo-img {
     width: 82px;
-    background-image: url(../../images/logo-tablet.svg);
+    background-image: url("../../images/logo-tablet.svg");
     margin-right: 68px;
   }
 }
@@ -36,7 +36,7 @@
 @media (min-width: $desktop-width) {
   .header__logo-img {
     width: 170px;
-    background-image: url(../../images/logo-desktop.svg);
+    background-image: url("../../images/logo-desktop.svg");
     margin-right: 20px;
   }
 

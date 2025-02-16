@@ -18,7 +18,7 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link">Главная</a>
+                <a class="navigation__link navigation__link--active">Главная</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link " href="#">Каталог</a>
@@ -27,7 +27,7 @@
                 <a class="navigation__link" href="#">Доставка</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link navigation__link--active" href="#">О нас</a>
+                <a class="navigation__link" href="#">О нас</a>
               </li>
             </ul>
           </nav>
@@ -38,7 +38,7 @@
             <a class="header-menu__link header-menu__link--basket" href="#">
               <span class="header-menu__description">Корзина</span>
             </a>
-            <button class="header-menu__burger" type="button">
+            <button class="header-menu__burger js-toggle-button" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </nav>
@@ -46,7 +46,40 @@
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">Страница для старта</h1>
+      <section class="hero" data-test="hero">
+        <div class="container--hero">
+          <h2 class="visually-hidden">Промо-блок</h2>
+          <div class="hero__slider slide">
+            <button class="slide__button--left slider-button-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <div class="slide__inner">
+              <figure class="slide__image-container">
+                <picture>
+                  <source type="image/webp" srcset="./images/flat_white_img_mobile@1x.webp, ./images/flat_white_img_mobile@1x.webp 2x">
+                  <img class="promo__image" src="./images/flat_white_img_mobile@1x.png" srcset="./images/flat_white_img_mobile@2x.png" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина Декаф Флэт Уайт.">
+                </picture>
+                <figcaption class="visually-hidden">Баночка cвежесваренного кофе без кофеина Декаф Флэт Уайт.</figcaption>
+              </figure>
+              <div class="slide__promo-content">
+                <strong class="slide__specificity">Новинка!</strong>
+                <p class="slide__title">Декаф Флэт Уайт</p>
+                <p class="slide__description">
+                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня"
+                </p>
+                <div class="slide__buy-wrap">
+                  <p class="slide__old-price">295₽</p>
+                  <p class="slide__price">225₽</p>
+                  <button class="slide__buy-button button">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <button class="slide__button--right slider-button-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

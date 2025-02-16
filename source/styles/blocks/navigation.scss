@@ -29,7 +29,7 @@
   }
 
   .navigation__item {
-    padding: 32px 20px 32px;
+    padding: 32px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -38,12 +38,11 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-    letter-spacing: 0.02em;;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     background-color: $base-white;
     overflow: hidden;
     max-width: fit-content;
-
   }
 
   .navigation__link {
@@ -53,7 +52,7 @@
     color: $base-black;
   }
 
-    .navigation__link--active::after {
+  .navigation__link--active::after {
     position: absolute;
     content: "";
     right: -20px;

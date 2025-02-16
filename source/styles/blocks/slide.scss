@@ -1,0 +1,128 @@
+.slide {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+}
+
+.slide__button {
+  height: 100%;
+  width: 100%;
+
+  &--left {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $base-primary;
+      background-repeat: no-repeat;
+      background-position: center center;
+      mask-image: url("../../icons/slider_left_arrow.svg");
+    }
+  }
+
+  &--right {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $base-primary;
+      background-repeat: no-repeat;
+      background-position: center center;
+      mask-image: url("../../icons/slider_right_arrow.svg");
+    }
+  }
+}
+
+.slide__image-container {
+  width: 280px;
+  height: 280px;
+  margin: 22px 0 10px;
+}
+
+.slide__promo-content {
+  display: flex;
+  flex-flow: column;
+  max-width: 280px;
+  align-items: center;
+}
+
+.slide__specificity {
+  text-transform: uppercase;
+  color: $base-primary;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.slide__title {
+  color: $base-black;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+
+.slide__description {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.slide__buy-wrap {
+  display: grid;
+  grid-template-columns: 48 70px auto;
+  align-items: center;
+  width: 230px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.slide__old-price {
+  color: $base-primary;
+  font-size: 16px;
+  text-decoration-line: line-through;
+  text-align: left;
+  margin: 0;
+}
+
+.slide__price {
+  color: $base-black;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+
+.slide__buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: $base-primary;
+  color: $base-white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  outline: 0;
+  min-height: 40px;
+  letter-spacing: 1;
+}
+
