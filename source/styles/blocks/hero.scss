@@ -2,6 +2,7 @@
   background-color: $flat-white;
 }
 
+//Tablet Viewport
 @media (min-width: 768px) {
   .hero{
     background: linear-gradient(
@@ -10,5 +11,12 @@
       $flat-white 640px,
       $base-white 640px,
       $base-white 100%);
+  }
+}
+
+//Desktop Viewport
+@media (min-width: 1440px) {
+  .hero {
+    background: $flat-white;
   }
 }

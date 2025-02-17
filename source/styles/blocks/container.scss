@@ -23,5 +23,9 @@
   .container {
     max-width: $desktop-width;
     padding: 0 40px;
+
+    &--hero {
+      padding: inherit;
+    }
   }
 }
