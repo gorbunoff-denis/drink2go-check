@@ -4,13 +4,8 @@
 
 //Tablet Viewport
 @media (min-width: 768px) {
-  .hero{
-    background: linear-gradient(
-      to bottom, 
-      $flat-white 0,
-      $flat-white 640px,
-      $base-white 640px,
-      $base-white 100%);
+  .hero {
+    background: linear-gradient (to bottom, $flat-white 0, $flat-white 640px, $base-white 640px, $base-white 100%);
   }
 }
 
