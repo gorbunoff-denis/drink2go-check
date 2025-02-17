@@ -44,7 +44,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
   }
 
   &--speed {
@@ -62,11 +61,10 @@
   &--energy {
     &::before {
       background-image: url("../../icons/features-energy.svg");
-    }   
+    }
   }
 
   &--eco {
-
     padding-top: 4px;
     &::before {
       background-image: url("../../icons/features-eco.svg");
@@ -82,7 +80,6 @@
   &--eco {
     margin: 62px 0 5px;
   }
-
 }
 
 .features__description {

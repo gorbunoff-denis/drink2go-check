@@ -143,13 +143,8 @@
   .slide {
     grid-template-columns: 80px 1fr 80px;
     width: 100%;
-    background: linear-gradient(
-      to bottom, 
-      $flat-white 0,
-      $flat-white 640px,
-      $base-white 640px,
-      $base-white 100%);
-  }
+    background: linear-gradient(to bottom, $flat-white 0, $flat-white 640px, $base-white 640px, $base-white 100%);
+    }
 
   .slide__inner {
     display: grid;
