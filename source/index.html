@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="preload" href="#" type="font/woff2" as="font"> -->
+    <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header" data-test="header">
+    <!-- <header class="header" data-test="header">
       <h1 class = "visually-hidden">Интернет-магазин кофейных напитков</h1>
       <div class="container">
         <div class="header__wrapper">
@@ -44,10 +44,10 @@
           </nav>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero" data-test="hero">
-        <div class="container--hero">
+        <div class="container container--hero">
           <h2 class="visually-hidden">Промо-блок</h2>
           <div class="hero__slider slide">
             <button class="slide__button--left slider-button-prev" type="button">
@@ -56,8 +56,40 @@
             <div class="slide__inner">
               <figure class="slide__image-container">
                 <picture>
-                  <source type="image/webp" srcset="./images/flat_white_img_mobile@1x.webp, ./images/flat_white_img_mobile@1x.webp 2x">
-                  <img class="promo__image" src="./images/flat_white_img_mobile@1x.png" srcset="./images/flat_white_img_mobile@2x.png" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина Декаф Флэт Уайт.">
+                  <!-- <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="/images/flat-white-img-desktop@1x.webp, /images/flat-white-img-desktop@2x.webp 2x"
+                  /> -->
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="images/flat-white-img-desktop@2x.webp"
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset = "images/flat-white-img-tablet@1x.webp, images/flat-white-img-tablet@2x.webp 2x"
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="images/flat-white-img-mobile@1x.webp, images/flat-white-img-mobile@2x.webp 2x"
+                  />
+                  <source
+                    type="image/png"
+                    media="(min-width: 1440px)"
+                    srcset="images/flat-white-img-desktop@1x.png, images/flat-white-img-desktop@2x.png 2x"
+                  />
+                  <source
+                    type="image/png"
+                    media="(min-width: 768px)"
+                    srcset="images/flat-white-img-tablet@1x.png, images/flat-white-img-tablet@2x.png 2x"
+                  />
+                  <img
+                    class="slide__image"
+                    src="images/flat-white-img-mobile@1x.png"
+                    srcset="images/flat-white-img-mobile@2x.png" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина Декаф Флэт Уайт."
+                  />
                 </picture>
                 <figcaption class="visually-hidden">Баночка cвежесваренного кофе без кофеина Декаф Флэт Уайт.</figcaption>
               </figure>
@@ -65,7 +97,7 @@
                 <strong class="slide__specificity">Новинка!</strong>
                 <p class="slide__title">Декаф Флэт Уайт</p>
                 <p class="slide__description">
-                  Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня"
+                  Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня
                 </p>
                 <div class="slide__buy-wrap">
                   <p class="slide__old-price">295₽</p>
