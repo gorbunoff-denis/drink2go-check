@@ -9,7 +9,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <!-- <header class="header" data-test="header">
+    <header class="header" data-test="header">
       <h1 class = "visually-hidden">Интернет-магазин кофейных напитков</h1>
       <div class="container">
         <div class="header__wrapper">
@@ -44,27 +44,22 @@
           </nav>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero" data-test="hero">
         <div class="container container--hero">
           <h2 class="visually-hidden">Промо-блок</h2>
           <div class="hero__slider slide">
-            <button class="slide__button--left slider-button-prev" type="button">
+            <button class="slide__button slide__button--left slider-button-prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
             <div class="slide__inner">
               <figure class="slide__image-container">
                 <picture>
-                  <!-- <source
-                    type="image/webp"
-                    media="(min-width: 1440px)"
-                    srcset="/images/flat-white-img-desktop@1x.webp, /images/flat-white-img-desktop@2x.webp 2x"
-                  /> -->
                   <source
                     type="image/webp"
                     media="(min-width: 1440px)"
-                    srcset="images/flat-white-img-desktop@2x.webp"
+                    srcset="/images/flat-white-img-desktop@1x.webp, /images/flat-white-img-desktop@2x.webp 2x"
                   />
                   <source
                     type="image/webp"
@@ -106,7 +101,7 @@
                 </div>
               </div>
             </div>
-            <button class="slide__button--right slider-button-next" type="button">
+            <button class="slide__button slide__button--right slider-button-next" type="button">
               <span class="visually-hidden">Следующий слайд</span>
             </button>
           </div>
